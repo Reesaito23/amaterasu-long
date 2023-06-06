@@ -1,0 +1,34 @@
+@use "sass:math";
+@use "sass:map";
+
+.question-content{
+  padding: get-pc-vw(56) 0 get-pc-vw(75) 0;
+
+  li{
+    &:not(:first-child) {
+        margin-top: get-pc-vw(80);
+      }
+  }
+
+  &__num{
+    width: get-sp-vw(50);
+    height: get-sp-vw(50);
+    margin: 0 auto;
+    @include mq($size: 'desktop'){
+      width: get-pc-vw(102);
+      height: get-pc-vw(102);
+    }
+  }
+  &__title{
+    margin-top: get-pc-vw(20);
+    font-size: get-sp-vw(24);
+    text-align: initial;
+    @include mq($size: 'desktop'){
+      font-size: get-pc-vw(38);
+    }
+  }
+  &__image{
+    margin-top: get-pc-vw(30);
+    width: 100%;
+  }
+}

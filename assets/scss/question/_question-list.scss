@@ -1,0 +1,40 @@
+@use "sass:math";
+@use "sass:map";
+
+.question-list{
+  text-align: initial;
+  margin-top: get-pc-vw(30);
+  li{
+    font-family: 'Noto Sans JP', sans-serif !important;
+    font-size:get-sp-vw(14) ;
+    position: relative;
+    padding-left: get-sp-vw(30);
+    @include mq($size: 'desktop'){
+      font-size: get-pc-vw(24);
+      padding-left: get-pc-vw(40);
+    }
+    &::before{
+      position: absolute;
+      left: 0;
+      top: get-sp-vw(2);
+      content: "";
+      background-size: contain;
+      background-image: url("../image/question/question__list.svg");
+      width: get-sp-vw(20);
+      height: get-sp-vw(20);
+      display: inline-block;
+      @include mq($size: 'desktop'){
+        top: get-pc-vw(2);
+        width: get-pc-vw(30);
+        height: get-pc-vw(30);
+      }
+
+    }
+    &:not(:first-child){
+      margin-top: get-pc-vw(20);
+    }
+    span{
+      background: linear-gradient(transparent 70%, #FBE74D 20%);
+    }
+  }
+}

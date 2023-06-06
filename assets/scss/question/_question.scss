@@ -1,0 +1,31 @@
+@use "sass:math";
+@use "sass:map";
+
+.question{
+  padding: get-pc-vw(60) get-pc-vw(20) get-pc-vw(20) get-pc-vw(20);
+  text-align: center;
+  &__title{
+    font-size: get-sp-vw(24);
+    text-align: center;
+    @include mq($size: 'desktop'){
+      font-size: get-pc-vw(40);
+    }
+    position: relative;
+    display: inline-block;
+    &::after{
+      background-image: url("../image/question/question__reef.png");
+      content: "";
+      width: get-pc-vw(52);
+      height: get-pc-vw(80);
+      background-size: contain;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      transform: translate(100%,-50%);
+      top: 50%;
+    }
+  }
+  &__bar{
+    margin-top: get-pc-vw(44);
+  }
+}

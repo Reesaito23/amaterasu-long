@@ -1,0 +1,30 @@
+@use "sass:math";
+@use "sass:map";
+
+.header{
+  padding: get-pc-vw(20) 0;
+  &__logo{
+    width: 20%;
+    margin: 0 auto;
+    min-width: get-sp-vw(125);
+    @include mq($size: 'desktop'){
+      min-width: get-pc-vw(125);
+    }
+  }
+  &__title{
+    font-size: get-sp-vw(24);
+    text-align: center;
+    margin-top: get-pc-vw(10);
+    @include mq($size: 'desktop'){
+      font-size: get-pc-vw(40);
+    }
+  }
+  &__text{
+    font-size: get-sp-vw(14);
+    text-align: center;
+    margin-top: get-pc-vw(2);
+    @include mq($size: 'desktop'){
+      font-size: get-pc-vw(20);
+    }
+  }
+}

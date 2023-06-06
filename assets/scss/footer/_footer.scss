@@ -1,0 +1,48 @@
+@use "sass:math";
+@use "sass:map";
+
+.footer{
+  background: linear-gradient(#56C983, #117E83);
+  padding: get-sp-vw(35) 0;
+  font-family: "Noto Sans JP", sans-serif !important;
+  @include mq($size: 'desktop'){
+    padding: get-pc-vw(35) 0;
+  }
+  &__button{
+    background: linear-gradient(#AFFFA5, #2DA500);
+    border-radius: get-sp-vw(11);
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: get-sp-vw(20);
+    padding: get-sp-vw(16) 0;
+    font-weight: bold;
+    border: get-sp-vw(4) solid #246F13;
+    @include mq($size: 'desktop'){
+      border-radius: get-pc-vw(11);
+      font-size: get-pc-vw(34);
+      padding: get-pc-vw(23) 0;
+      border: get-pc-vw(4) solid #246F13;
+    }
+  }
+  &__links{
+    margin-top: get-sp-vw(20);
+    text-align: center;
+    font-size: get-sp-vw(11);
+    color: #fff;
+    @include mq($size: 'desktop'){
+      margin-top: get-pc-vw(20);
+      font-size: get-pc-vw(12);
+    }
+    a{
+      &:not(:first-child){
+        margin-left: get-sp-vw(5);
+        @include mq($size: 'desktop'){
+          margin-left: get-pc-vw(10);
+        }
+      }
+    }
+  }
+}

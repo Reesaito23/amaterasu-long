@@ -1,0 +1,202 @@
+body {
+  font-family: "Noto Serif JP", serif !important;
+}
+
+.wrap-all {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 1.5384615385vw 0;
+}
+.header__logo {
+  width: 20%;
+  margin: 0 auto;
+  min-width: 33.3333333333vw;
+}
+@media screen and (min-width: 835px) {
+  .header__logo {
+    min-width: 9.6153846154vw;
+  }
+}
+.header__title {
+  font-size: 6.4vw;
+  text-align: center;
+  margin-top: 0.7692307692vw;
+}
+@media screen and (min-width: 835px) {
+  .header__title {
+    font-size: 3.0769230769vw;
+  }
+}
+.header__text {
+  font-size: 3.7333333333vw;
+  text-align: center;
+  margin-top: 0.1538461538vw;
+}
+@media screen and (min-width: 835px) {
+  .header__text {
+    font-size: 1.5384615385vw;
+  }
+}
+
+.banner__image {
+  width: 100%;
+}
+
+.question {
+  padding: 4.6153846154vw 1.5384615385vw 1.5384615385vw 1.5384615385vw;
+  text-align: center;
+}
+.question__title {
+  font-size: 6.4vw;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+@media screen and (min-width: 835px) {
+  .question__title {
+    font-size: 3.0769230769vw;
+  }
+}
+.question__title::after {
+  background-image: url("../image/question/question__reef.png");
+  content: "";
+  width: 4vw;
+  height: 6.1538461538vw;
+  background-size: contain;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  transform: translate(100%, -50%);
+  top: 50%;
+}
+.question__bar {
+  margin-top: 3.3846153846vw;
+}
+
+.question-content {
+  padding: 4.3076923077vw 0 5.7692307692vw 0;
+}
+.question-content li:not(:first-child) {
+  margin-top: 6.1538461538vw;
+}
+.question-content__num {
+  width: 13.3333333333vw;
+  height: 13.3333333333vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 835px) {
+  .question-content__num {
+    width: 7.8461538462vw;
+    height: 7.8461538462vw;
+  }
+}
+.question-content__title {
+  margin-top: 1.5384615385vw;
+  font-size: 6.4vw;
+  text-align: initial;
+}
+@media screen and (min-width: 835px) {
+  .question-content__title {
+    font-size: 2.9230769231vw;
+  }
+}
+.question-content__image {
+  margin-top: 2.3076923077vw;
+  width: 100%;
+}
+
+.question-list {
+  text-align: initial;
+  margin-top: 2.3076923077vw;
+}
+.question-list li {
+  font-family: "Noto Sans JP", sans-serif !important;
+  font-size: 3.7333333333vw;
+  position: relative;
+  padding-left: 8vw;
+}
+@media screen and (min-width: 835px) {
+  .question-list li {
+    font-size: 1.8461538462vw;
+    padding-left: 3.0769230769vw;
+  }
+}
+.question-list li::before {
+  position: absolute;
+  left: 0;
+  top: 0.5333333333vw;
+  content: "";
+  background-size: contain;
+  background-image: url("../image/question/question__list.svg");
+  width: 5.3333333333vw;
+  height: 5.3333333333vw;
+  display: inline-block;
+}
+@media screen and (min-width: 835px) {
+  .question-list li::before {
+    top: 0.1538461538vw;
+    width: 2.3076923077vw;
+    height: 2.3076923077vw;
+  }
+}
+.question-list li:not(:first-child) {
+  margin-top: 1.5384615385vw;
+}
+.question-list li span {
+  background: linear-gradient(transparent 70%, #FBE74D 20%);
+}
+
+.footer {
+  background: linear-gradient(#56C983, #117E83);
+  padding: 9.3333333333vw 0;
+  font-family: "Noto Sans JP", sans-serif !important;
+}
+@media screen and (min-width: 835px) {
+  .footer {
+    padding: 2.6923076923vw 0;
+  }
+}
+.footer__button {
+  background: linear-gradient(#AFFFA5, #2DA500);
+  border-radius: 2.9333333333vw;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 5.3333333333vw;
+  padding: 4.2666666667vw 0;
+  font-weight: bold;
+  border: 1.0666666667vw solid #246F13;
+}
+@media screen and (min-width: 835px) {
+  .footer__button {
+    border-radius: 0.8461538462vw;
+    font-size: 2.6153846154vw;
+    padding: 1.7692307692vw 0;
+    border: 0.3076923077vw solid #246F13;
+  }
+}
+.footer__links {
+  margin-top: 5.3333333333vw;
+  text-align: center;
+  font-size: 2.9333333333vw;
+  color: #fff;
+}
+@media screen and (min-width: 835px) {
+  .footer__links {
+    margin-top: 1.5384615385vw;
+    font-size: 0.9230769231vw;
+  }
+}
+.footer__links a:not(:first-child) {
+  margin-left: 1.3333333333vw;
+}
+@media screen and (min-width: 835px) {
+  .footer__links a:not(:first-child) {
+    margin-left: 0.7692307692vw;
+  }
+}/*# sourceMappingURL=style.css.map */

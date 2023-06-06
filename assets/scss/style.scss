@@ -1,0 +1,14 @@
+// @font-face {
+//     font-family: "bananasplus";
+//     src: url("../font/bananaslipplus.otf") format("opentype");
+// }
+@import 'global/mixin';
+@import 'global/setting';
+@import 'global/function';
+
+@import 'header/header';
+@import 'banner/banner';
+@import 'question/question';
+@import 'question/question-content';
+@import 'question/question-list';
+@import 'footer/footer';
