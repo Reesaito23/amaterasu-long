@@ -9,6 +9,11 @@
         margin-top: get-pc-vw(80);
       }
   }
+  &:nth-of-type(1){
+    .question-content__title{
+      text-align: center;
+    }
+  }
 
   &__num{
     width: get-sp-vw(50);

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="グループ_5351" data-name="グループ 5351" transform="translate(16575 7895)">
+    <rect id="長方形_383" data-name="長方形 383" width="30" height="30" rx="4" transform="translate(-16575 -7895)" fill="#77b456"/>
+    <g id="correct-symbol" transform="translate(-16568.277 -7885.535)">
+      <path id="パス_12" data-name="パス 12" d="M16.512,53.457l-1.475-1.475a1.048,1.048,0,0,0-1.475,0L6.444,59.109l-3.19-3.2a1,1,0,0,0-.738-.3,1,1,0,0,0-.738.3L.3,57.384a1.048,1.048,0,0,0,0,1.476l3.927,3.927,1.476,1.475a1.048,1.048,0,0,0,1.475,0l1.475-1.475,7.854-7.854a1.048,1.048,0,0,0,0-1.476Z" transform="translate(0 -51.678)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

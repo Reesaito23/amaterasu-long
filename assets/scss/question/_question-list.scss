@@ -9,32 +9,64 @@
     font-size:get-sp-vw(14) ;
     position: relative;
     padding-left: get-sp-vw(30);
+    line-height: 2em;
     @include mq($size: 'desktop'){
       font-size: get-pc-vw(24);
-      padding-left: get-pc-vw(40);
+      padding-left: get-pc-vw(45);
     }
     &::before{
-      position: absolute;
-      left: 0;
-      top: get-sp-vw(2);
-      content: "";
-      background-size: contain;
-      background-image: url("../image/question/question__list.svg");
-      width: get-sp-vw(20);
-      height: get-sp-vw(20);
-      display: inline-block;
-      @include mq($size: 'desktop'){
-        top: get-pc-vw(2);
-        width: get-pc-vw(30);
-        height: get-pc-vw(30);
-      }
+      // position: absolute;
+      // left: 0;
+      // top: .5em;
+      // content: "";
+      // background-size: contain;
+      // background-image: url("../image/question/question__list.svg");
+      // width: get-sp-vw(20);
+      // height: get-sp-vw(20);
+      // display: inline-block;
+      // @include mq($size: 'desktop'){
+      //   top: .5em;
+      //   width: get-pc-vw(30);
+      //   height: get-pc-vw(30);
+      // }
 
     }
     &:not(:first-child){
-      margin-top: get-pc-vw(20);
+      margin-top: get-sp-vw(25);
+      @include mq($size: 'desktop'){
+        margin-top: get-pc-vw(25);
+      }
     }
-    span{
-      background: linear-gradient(transparent 70%, #FBE74D 20%);
+    .mark{
+      background: linear-gradient(transparent 70%, rgba(251,231,77,.5) 20%);
+    }
+  }
+
+  .check-box {
+    cursor: pointer;
+    input{
+      display: none;
+      + .check-text::before{
+        background-image: url("../image/question/question__check-none.svg");
+        position: absolute;
+          left: 0;
+          top: .5em;
+          content: "";
+          background-size: contain;
+          width: get-sp-vw(20);
+            height: get-sp-vw(20);
+            display: inline-block;
+            @include mq($size: 'desktop') {
+                top: .5em;
+                width: get-pc-vw(30);
+                height: get-pc-vw(30);
+              }
+      }
+      &:checked{
+        + .check-text::before{
+          background-image: url("../image/question/question__check-done.svg");
+        }
+      }
     }
   }
 }
