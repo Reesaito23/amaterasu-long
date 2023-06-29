@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@600&family=Shippori+Mincho:wght@600&display=swap"
       rel="stylesheet"
     />
 
@@ -23,404 +23,512 @@
     />
   </head>
   <body>
-    <section class="wrap-all">
-      <!-- Header -->
-      <header class="header">
-        <img class="header__logo" src="assets/image/header/logo.png" alt="" />
-        <h1 class="header__title">
-          現代を生きる多忙なあなたに<br />健康に関するアンケート
-        </h1>
-        <p class="header__text">(全4問、約50秒)</p>
-      </header>
-
-      <!-- banner01 -->
-      <section class="banner">
-        <img
-          class="banner__image"
-          src="assets/image/banner/image__amaterasu.png"
-          alt=""
-        />
-        <img
-          class="banner__image"
-          src="assets/image/banner/image__price.png"
-          alt=""
-        />
-      </section>
-
-      <!-- question -->
-      <section class="question">
-        <h2 class="question__title">Question</h2>
-        <div class="question__bar">
-          <img src="assets/image/question/question__bar.png" alt="" />
-        </div>
-        <ul class="question-content">
-          <li>
-            <img
-              class="question-content__num"
-              src="assets/image/question/question__01.png"
-              alt=""
-            />
-            <h3 class="question-content__title">
-              貴方が最近感じる体の変化を<br />次の中から全てお選びください
-            </h3>
-            <img
-              class="question-content__image"
-              src="assets/image/question/question__image01.png"
-              alt=""
-            />
-            <ul class="question-list">
-              <li>
-                <label class="check-box" for="check1-1">
-                  <input type="checkbox" id="check1-1" />
-                  <span class="check-text"
-                    ><span class="mark">気力体力ともに減退</span
-                    >、やる気が起きない</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check1-11">
-                  <input type="checkbox" id="check1-11" />
-                  <span class="check-text"
-                    >いつも<span class="mark">錆びついたような疲労</span
-                    >が残っている</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check1-2">
-                  <input type="checkbox" id="check1-2" />
-                  <span class="check-text"
-                    >ここぞというときに<span class="mark"
-                      >踏ん張りが効かない</span
-                    ></span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check1-3">
-                  <input type="checkbox" id="check1-3" />
-                  <span class="check-text"
-                    >ぐっすり眠れず<span class="mark"
-                      >疲れが取れない</span
-                    ></span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check1-4">
-                  <input type="checkbox" id="check1-4" />
-                  <span class="check-text"
-                    >お肌のくすみや<span class="mark">髪のパサつき</span
-                    >が気になる</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check1-5">
-                  <input type="checkbox" id="check1-5" />
-                  <span class="check-text"
-                    >女性・男性としての<span class="mark">自信がなくなって</span
-                    >きた</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check1-6">
-                  <input type="checkbox" id="check1-6" />
-                  <span class="check-text"
-                    >ワクワクすることがなく<span class="mark"
-                      >気分が沈みがち</span
-                    ></span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check1-7">
-                  <input type="checkbox" id="check1-7" />
-                  <span class="check-text"
-                    ><span class="mark">目の疲れ</span>が気になる</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check1-8">
-                  <input type="checkbox" id="check1-8" />
-                  <span class="check-text"
-                    ><span class="mark">お通じのリズム</span>が乱れてきた</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check1-9">
-                  <input type="checkbox" id="check1-9" />
-                  <span class="check-text"
-                    >代謝が落ちて<span class="mark"
-                      >なかなか痩せない</span
-                    ></span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check1-10">
-                  <input type="checkbox" id="check1-10" />
-                  <span class="check-text">その他</span>
-                </label>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <img
-              class="question-content__num"
-              src="assets/image/question/question__02.png"
-              alt=""
-            />
-            <h3 class="question-content__title">
-              ヒュウガトウキには豊富な栄養素がバランスよく含まれています。それら成分のうち、あなたが興味を持ったものを次の中から全てお選び下さい。
-            </h3>
-            <img
-              class="question-content__image"
-              src="assets/image/question/question__image02.png"
-              alt=""
-            />
-            <ul class="question-list">
-              <li>
-                <label class="check-box" for="check2-1">
-                  <input type="checkbox" id="check2-1" />
-                  <span class="check-text"
-                    >地球上で<span class="mark"
-                      >ヒュウガトウキにしか含まれない『YN-1』</span
-                    >という有機化合物は食後の活動をサポートすると言われており、現代人の乱れた食生活には欠かせない要素です</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check2-2">
-                  <input type="checkbox" id="check2-2" />
-                  <span class="check-text"
-                    >人間の体に必要な必須アミノ酸は人体で作り出すことができません。ヒュウガトウキはこの<span
-                      class="mark"
-                      >必須アミノ酸を９種類</span
-                    >含んでいます</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check2-3">
-                  <input type="checkbox" id="check2-3" />
-                  <span class="check-text"
-                    ><span class="mark">抗酸化作用を持つ</span
-                    >とされるクマリン・ポリアセチレンが含まれています</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check2-4">
-                  <input type="checkbox" id="check2-4" />
-                  <span class="check-text"
-                    >生命を維持するのに<span class="mark"
-                      >必要な栄養素がバランス</span
-                    >よく含まれています</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check2-5">
-                  <input type="checkbox" id="check2-5" />
-                  <span class="check-text">特になし</span>
-                </label>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <img
-              class="question-content__num"
-              src="assets/image/question/question__03.png"
-              alt=""
-            />
-            <h3 class="question-content__title">
-              ヒュウガトウキには豊富な栄養素がバランスよく含まれています。それら成分のうち、あなたが興味を持ったものを次の中から全てお選び下さい。
-            </h3>
-            <img
-              class="question-content__image"
-              src="assets/image/question/question__image03.png"
-              alt=""
-            />
-            <ul class="question-list">
-              <li>
-                <label class="check-box" for="check3-1">
-                  <input type="checkbox" id="check3-1" />
-                  <span class="check-text"
-                    ><span class="mark">国産100％・天然100％</span
-                    >の葉っぱを食品にも使われる成分で固めただけのシンプルな処方であること</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check3-2">
-                  <input type="checkbox" id="check3-2" />
-                  <span class="check-text"
-                    >根の部分は平成14年に厚生労働省による医薬品の生薬リストにも加えられたが、<span
-                      class="mark"
-                      >代表的有効成分でるYN-1</span
-                    >が葉にも大量に含まれていることがわかり、近年注目を集めていること</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check3-3">
-                  <input type="checkbox" id="check3-3" />
-                  <span class="check-text"
-                    >使用しているヒュウガトウキは<span class="mark"
-                      >契約農家で無農薬で栽培</span
-                    >されたものであること</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check3-4">
-                  <input type="checkbox" id="check3-4" />
-                  <span class="check-text"
-                    >国内のGMP（Good Manufacturing Practice
-                    「適正製造規範」）認定工場で製造された<span class="mark"
-                      >安心・安全なもの</span
-                    >であること</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check3-5">
-                  <input type="checkbox" id="check3-5" />
-                  <span class="check-text">特になし</span>
-                </label>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <img
-              class="question-content__num"
-              src="assets/image/question/question__04.png"
-              alt=""
-            />
-            <h3 class="question-content__title">
-              Omniscienceのアマテラスの由来・外観・形状についてあなたが感じた印象興味を持った点を次の中から全てお選びください。
-            </h3>
-            <img
-              class="question-content__image"
-              src="assets/image/question/question__image04.png"
-              alt=""
-            />
-            <ul class="question-list">
-              <li>
-                <label class="check-box" for="check4-1">
-                  <input type="checkbox" id="check4-1" />
-                  <span class="check-text"
-                    >あまり<sppan class="mark">耳慣れない素材</sppan
-                    >なので試してみたい</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check4-2">
-                  <input type="checkbox" id="check4-2" />
-                  <span class="check-text"
-                    >天孫降臨の地、高千穂山系で育つ<span class="mark"
-                      >「神の草」</span
-                    >であること</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check4-3">
-                  <input type="checkbox" id="check4-3" />
-                  <span class="check-text"
-                    >篤姫の父島津斉彬公がその<span class="mark"
-                      >希少性から門外不出</span
-                    >にしたこと</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check4-4">
-                  <input type="checkbox" id="check4-4" />
-                  <span class="check-text"
-                    ><span class="mark">飲みやすく移動にも便利</span
-                    >なタブレット状</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check4-5">
-                  <input type="checkbox" id="check4-5" />
-                  <span class="check-text"
-                    ><span class="mark">コンパクトで持ち運びしやすい</span
-                    >アルミパウチ</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check4-6">
-                  <input type="checkbox" id="check4-6" />
-                  <span class="check-text"
-                    >キャンディやスイーツのように<span class="mark"
-                      >スタイリッシュ</span
-                    >なパッケージ</span
-                  >
-                </label>
-              </li>
-              <li>
-                <label class="check-box" for="check4-7">
-                  <input type="checkbox" id="check4-7" />
-                  <span class="check-text">特になし</span>
-                </label>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <div class="question__tanks">
-          <img src="assets/image/question/question__thanks.png" alt="" />
-        </div>
-      </section>
-
-      <!-- banner01 -->
-      <section class="banner">
-        <img
-          class="banner__image"
-          src="assets/image/banner/image__price.png"
-          alt=""
-        />
-        <img
-          class="banner__image"
-          src="assets/image/banner/image__amaterasu.png"
-          alt=""
-        />
-      </section>
-
-      <!-- footer -->
-      <footer class="footer" id="footer">
-        <a
-          href="https://www.amateras.biz/#lp-form"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="footer__button"
-        >
-          <p>回答者限定特別価格はこちら</p>
+    <div class="popup">
+      <div class="popup-banner">
+        <span class="popup-close">×</span>
+        <a href="">
+          <!-- バナー -->
+          <img
+            src="https://picsum.photos/300/300?grayscale"
+            width="300"
+            height="300"
+            alt=""
+          />
         </a>
-        <div class="footer__links">
+      </div>
+    </div>
+    <main>
+      <section class="wrap-all">
+        <!-- Header -->
+        <header class="header">
+          <div class="header__top"></div>
+          <h1 class="header__title">
+            <p>女性らしさを取り戻す</p>
+            <p class="fuchi header__title-fuchi">
+              <img
+                src="assets/image/header/title-fuchi.png"
+                alt="脅威的な体験ができる"
+              />
+            </p>
+            <p>誰でもできる</p>
+            <p class="grade header__title-grade">
+              <img
+                src="assets/image/header/title-gradation.png"
+                alt="衝撃の方法が話題!"
+              />
+            </p>
+          </h1>
+          <div class="header__imagearea">
+            <img
+              class="imagearea__image"
+              src="assets/image/header/header-image.png"
+              alt=""
+            />
+            <div class="imagearea__textblock">
+              <p class="">江戸時代から伝わる「門外不出の薬草」が</p>
+              <p class="fuchi imagearea__textblock-fuchi">
+                <img src="assets/image/header/text-reason.png" alt="" />
+              </p>
+            </div>
+          </div>
+        </header>
+
+        <!-- worry -->
+        <section class="worry">
+          <p class="worry__text">突然ですが<br />最近こんな悩みないですか？</p>
+          <ul class="worry__list">
+            <li>寝起きが辛い</li>
+            <li>落ち込んだりイライラすることがある</li>
+            <li>たっぷり睡眠しても疲れを感じることがある</li>
+            <li>ここぞという時に踏ん張りが効かない</li>
+          </ul>
+          <img src="assets/image/worry/arrow.png" alt="" />
+        </section>
+
+        <section class="article">
+          <p>
+            私もいつからか疲れを感じることが増えて<br />ついうとうとしたくなることも
+          </p>
+          <img src="assets/image/article/article__image01.png" alt="" />
+          <p>自宅だけではなく外出先でも<br />無意識にため息が出てるらしく</p>
+          <p>
+            家族からも<br /><span class="text__blue text__bold"
+              >「ため息多くない?」</span
+            >とも言われ
+          </p>
+          <img
+            class="image__illust"
+            src="assets/image/article/article__image02.png"
+            alt=""
+          />
+          <p>
+            体重も増えるし肌の調子がイマイチで<br />ダルさを感じることあったけど<br />自分がそんなに疲れてるとは<br />ショックでした・・・
+          </p>
+          <p class="text__big">と言っても</p>
+          <img src="assets/image/article/article__image03.png" alt="" />
+          <p>
+            高いコスメも買うし食事も気をつけている。<br />たまにはウォーキングもしてカラダを動かしてるのに、<br />ふだんと変わらない・・・
+          </p>
+          <p class="text__green text__bold">
+            「このままくたびれた<br />おばさんになりたくない…」
+          </p>
+          <p>
+            やや諦めた気持ちで過ごしているとき、<br /><span
+              class="text__red text__bold"
+              >驚きの話</span
+            >を知ったんです！
+          </p>
+          <p>日々の疲れやダルさが<br />なかなかとれない理由は</p>
+          <img src="assets/image/article/article__image04.png" alt="" />
+          <p>
+            先日メーカーの研究所で働く親戚から<br />こんな話しを聞きました。
+          </p>
+          <p class="text__blue">
+            加齢とともに40代以降からは毒素ともいえる<br />老廃物
+            を排出する力が衰えてくるとか。。
+          </p>
+          <img
+            class="image__illust"
+            src="assets/image/article/article__image05.png"
+            alt=""
+          />
+          <p>
+            もっと詳しく話を聞くと、<br />そんな問題をサポートしてくれる薬草があり、<br /><span
+              class="text__mark"
+              >健康と美容の意識が高い人たちで</span
+            ><br /><span class="text__mark"
+              >密かに話題になっているとのこと</span
+            >
+          </p>
+        </section>
+
+        <section class="hyugatoki">
+          <img
+            class="hyugatoki__title"
+            src="assets/image/hyugatoki/hyugatoki__title.png"
+            alt=""
+          />
+          <img src="assets/image/hyugatoki/hyugatoki__image01.png" alt="" />
+          <p>
+            その歴史は古く天孫降臨のイザナミイザナギ伝説で<br />知られる高千穂山系でしか育たない<br />「神の草」と言
+            われるほど。<br />日本山人参とも呼ばれています。
+          </p>
+          <p class="text__green text__big">
+            高千穂と言えば<br />日本でも有数な神聖なスポット
+          </p>
+          <img src="assets/image/hyugatoki/hyugatoki__image02.png" alt="" />
+          <p>
+            高千穂郷の山間部の限られた地域だけに自生する<br />ヒュウガトウキは希少性が高く、<br /><span
+              class="text__red text__mark"
+              >野生のヒュウガトウキは絶滅危 惧種に指定されています。</span
+            >
+          </p>
+          <img src="assets/image/hyugatoki/hyugatoki__image01.png" alt="" />
+          <p class="text__green text__big">
+            つまり神聖な山奥に育まれてきた<br />古来から伝わる薬草なんです
+          </p>
+          <p>
+            このヒュウガトウキは密かに<br /><span class="text__red text__big"
+              >一流の女優</span
+            >や<span class="text__red text__big">世界的な演奏家</span
+            >など<br />美容や健康に気を付けてる著名人が<br />長年愛用しているんです!
+          </p>
+          <img src="assets/image/hyugatoki/hyugatoki__image03.png" alt="" />
+          <p class="text__shippori text__bold text__green">
+            「神の草」の<br /><span class="text__underline">ヒュウガトウキ</span
+            >は秘薬!
+          </p>
+          <p>
+            ヒュウガトウキは江戸時代から<br />島津家の薩摩藩で「神の草」と呼ばれ、<br />様々な難病を治癒したことから<br /><span
+              class="text__red"
+              >秘薬として珍重されてきました。</span
+            >
+          </p>
+          <p class="text__big">そのため</p>
+          <img
+            class="image__illust image__illust-margin"
+            src="assets/image/hyugatoki/hyugatoki__image04.png"
+            alt=""
+          />
+          <p>
+            大河ドラマでもお馴染み<br /><span class="text__blue"
+              >篤姫の父上である島津公が門外不出</span
+            >にするほど
+          </p>
+          <p>実はあらためて発見されたのは<br />昭和の後半になってから。</p>
+          <p class="text__green text__big text__underline-green">
+            ヒュウガトウキって何がすごいの?
+          </p>
+          <img
+            class="image__illust"
+            src="assets/image/hyugatoki/hyugatoki__image05.png"
+            alt=""
+          />
+          <p>調べてみた結果、<br />体内の老廃物を排出する成分</p>
+          <p>
+            <span class="text__bold text__red text__mark">YN-1</span
+            >が含まれているから
+          </p>
+          <p class="text__left">
+            ヒュウガトウキに含まれる成分のYN-1(イソエポ
+            キシプテリキシン)」には、<span class="text__red"
+              >過剰な栄養素や老廃
+              物・毒素、筋肉疲労物質などの有害物質の排泄を促進し、体内への蓄積を防ぎ、消化や代謝を活性化させる働き</span
+            >があります。
+          </p>
+          <p class="text__big">つまり…</p>
+          <p>
+            元気や美容に悪影響を及ぼす老廃物を<br /><span
+              class="text__green text__big"
+              >取り除いてくれる貴重な成分</span
+            >
+          </p>
+          <img
+            class="image__illust"
+            src="assets/image/hyugatoki/hyugatoki__image06.png"
+            alt=""
+          />
+          <p>
+            だから、女性らしさが失われる<br />40代以降の女性のカラダを整える働きを<br />強力にサポートしてくれるのです
+          </p>
+          <p>活力や美容の悪影響になる老廃物を<br />どんどん排出！</p>
+          <img src="assets/image/hyugatoki/hyugatoki__image07.png" alt="" />
+          <p>
+            ヒュウガトウキを摂取している人の<br />口コミをチェックしてみると大絶賛の声が!
+          </p>
+        </section>
+
+        <section class="kuchikomi">
+          <img src="assets/image/kuchikomi/kuchikomi__image01.png" alt="" />
+          <img src="assets/image/kuchikomi/kuchikomi__image02.png" alt="" />
+          <img src="assets/image/kuchikomi/kuchikomi__image03.png" alt="" />
+        </section>
+
+        <section class="reason">
+          <p>
+            他の口コミも同じような<br /><span
+              class="text__red text__bold text__mark"
+              >驚異的な体験ばかり</span
+            >
+          </p>
+          <p>みんな同じような問題を抱えている人が多いのですが、</p>
+          <p class="text__big text__blue">その原因は…</p>
+          <div class="arrow__block">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+          </div>
+          <p>
+            40代から急激に<br /><span class="text__red"
+              ><span class="text__underline-red text__big"
+                >排出機能を支える女性らしさ</span
+              >が<br />低下するから</span
+            >
+          </p>
+          <img src="assets/image/reason/reason__image01.png" alt="" />
+          <p>40代、50代になるつれカラダや心が<br />不安定になるのはそのため</p>
+          <p>
+            <span class="text__blue text__big">イライラ・くよくよ・息切れ</span
+            ><br />などは不調のサインです
+          </p>
+          <img src="assets/image/reason/reason__image02.png" alt="" />
+          <p class="text__red text__big">
+            <span class="text__mark">さらに新事実！</span>
+          </p>
+          <p class="text__blue">
+            50代女性については<br /><span class="text__bold">72%</span
+            ><br />が気力や体力に<br />問題を抱えているとわかりました。
+          </p>
+          <img
+            class="reason__graph"
+            src="assets/image/reason/reason__image03.png"
+            alt=""
+          />
+          <p>
+            多くの女性が何からの問題を抱えながら<br />毎日を過ごしているんです
+          </p>
+          <p>毒素である老廃物が<br />体内にたまって不調を招きがち。</p>
+          <p>だから「出す力」を強化できるヒュウガトウキの</p>
+          <p>
+            <span class="text__red text__mark text__bold">YN-1</span
+            >が注目されているんです
+          </p>
+          <p>でもヒュウガトウキがすごいのは<br />それだけじゃないんです</p>
+          <p class="text__green text__underline-green text__big">
+            ヒュウガトウキは<br />嬉しいサポート成分が豊富
+          </p>
+          <p>
+            ヒュウガトウキは他にも<br />優れた栄養成分が数多く含まれています
+          </p>
+          <img src="assets/image/reason/reason__image04.png" alt="" />
+          <p>
+            体内で十分な量が生成できない<br />必須アミノ酸やポリ
+            フェノールなどの<br />すぐれた健康成分を含みます。
+          </p>
+          <p>
+            しかもトリプトファンは<br />睡眠の質の向上させるのに欠かせない成分！<br />寝つきが悪くて疲れがとれない人を<br />サポートしてくれます。
+          </p>
+          <p class="text__green text__big">他にも嬉しいサポート成分が多数！</p>
+          <img
+            class="reason__table"
+            src="assets/image/reason/reason__image05.png"
+            alt=""
+          />
+          <p>
+            一説には栄養成分が<br /><span class="text__pink">45種類</span
+            >もあるとか
+          </p>
+          <p>
+            こんなにたくさんの成分を摂取できるて<br /><span
+              class="text__red text__big"
+              >さすが<span class="text__mark">「神の草」</span></span
+            >…
+          </p>
+          <p>薬草として重宝されてきたのもうなずけます</p>
+          <p class="text__green text__underline-green text__big">
+            ヒュウガトウキを摂取するなら<br />サプリがオススメ!
+          </p>
+          <p>
+            そんな希少性が高くて<br />女性の「神の草」ヒュウガトウキ。<br />これを摂取するにはどうすれば<br />いいのか気になりますよね?
+          </p>
+          <p>
+            結論から言うと、<br />ヒュウガトウキを摂取するなら<br /><span
+              class="text__red"
+              >サプリがオススメです！</span
+            >
+          </p>
+          <img src="assets/image/reason/reason__image06.png" alt="" />
+          <p>
+            ヒュウガトウキは葉の部分を摂取するのですが、<br />最もその成分を損なわずに摂取するためには<br /><span
+              class="text__red"
+              >熱したり蒸したりしないこと</span
+            >
+          </p>
+          <img
+            class="reason__image-not"
+            src="assets/image/reason/reason__image07.png"
+            alt=""
+          />
+          <p>
+            そこでオススメは葉っぱを<br />すりつぶしただけの混じりっけのない
+          </p>
+          <p class="text__red text__big">
+            <span class="text__mark">天然100%サプリ！</span>
+          </p>
+          <ul class="reason__list text__blue">
+            <li>必要なのはお水だけ<br />忙しいときでもいつでも飲める</li>
+            <li>味にクセがないので<br />続けやすい</li>
+            <li>携行できるから<br />旅行先や外出先でもお手軽</li>
+          </ul>
+          <p>あとはお気に入りのサプリを探すだけ！</p>
+          <p>
+            <span class="text__green text__big"
+              >「探すの大変だしどれが<br />オススメなのか知りたい！」</span
+            ><br />という方へ朗報！
+          </p>
+          <p>高品質でお得な<br />ヒュウガトウキサプリを見つけました！</p>
+        </section>
+
+        <section class="amateras">
+          <img
+            class="amaterasu__title"
+            src="assets/image/amateras/amaterasu__title.png"
+            alt=""
+          />
+          <p>
+            ヒュウガトウキサプリでオススメは<br /><span
+              class="text__red text__mark text__big"
+              >AMATERS(アマテラス)！</span
+            >
+          </p>
+          <img
+            class="banner__image amateras__image"
+            src="assets/image/banner/image__amaterasu.png"
+            alt=""
+          />
+          <ul class="amateras__list">
+            <li>
+              希少性の高いヒュウガトウキを厳選。<br />国産で天然
+              100%の葉っぱのみを使用。
+            </li>
+            <li>良い成分が多く含まれている<br />秋の熟成葉を100%使用</li>
+            <li>契約農家で無農薬栽培。<br />安全国内のGMP指定工場からお届け</li>
+          </ul>
+          <p>
+            愛用者の声をみても<br /><span class="text__mark text__red text__big"
+              >「飲めばわかる！」</span
+            ><br /><span class="text__mark text__red text__big"
+              >「アマテラスのおかげ！」</span
+            ><br />と高評価ばかり
+          </p>
+          <p>
+            高品質なヒュウガトウキと製造方法に<br />こだわっているのが高評価になっているんです
+          </p>
+          <div class="amateras__padding">
+            <img src="assets/image/amateras/amaterasu__image01.png" alt="" />
+          </div>
+          <p>
+            そしてアマテラスは厳選したヒュウガトウキを<br />丁寧な工程で1つ1つ丁寧に製造しています。
+          </p>
+          <p>安心して続けられるのもポイントですね！</p>
+          <p class="text__big text__blue">でも気になるのがお値段…</p>
+          <p>
+            というのもヒュウガトウキは<br />希少性が高く著名人も買い集めてる薬草のため、<br />サプリでもけっこう高い値段で<br />販売されていることが多いんです…
+          </p>
+          <p class="text__big text__blue">
+            人気ショッピングモールでも<br />7000円販売されていることも…
+          </p>
+          <p>
+            でもアマテラスは<br /><span class="text__red text__big"
+              >お得な特別価格</span
+            >がで買えるみたい！
+          </p>
+          <div class="arrow__block">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+          </div>
+        </section>
+
+        <section class="tokubetsu">
+          <img
+            class="tokubetsu__list"
+            src="assets/image/tokubetsu/tokubetsu__title.png"
+            alt=""
+          />
+          <p>
+            30日分120粒<br /><span class="text__big text__blue"
+              >通常価格 3,980円(税込)</span
+            >
+          </p>
+          <div class="arrow__block arrow__block-red">
+            <div class="arrow"></div>
+            <p class="text__red">
+              1粒あたり<br /><span class="text__big">26%OFF</span>
+            </p>
+          </div>
+          <img
+            class="banner__image"
+            src="assets/image/banner/image__price.png"
+            alt=""
+          />
+          <div class="tokubetsu__amateras tokubetsu__padding">
+            <img src="assets/image/tokubetsu/tokubetsu__image01.png" alt="" />
+          </div>
+          <p>
+            しかもアンケートはたったの<span class="text__red">3問</span>のみ！
+          </p>
+          <p>
+            初めてヒュウガトウキを試したい人にはピッタリ！<br />7000円ぐらいで売っている商品なのに<br />お得すぎませんか？
+          </p>
+          <p class="text__red text__big">
+            <span class="text__mark">しかも送料無料</span>
+          </p>
+          <p>支払い方法も選べて<br />自分に合った方法でお買い物できます</p>
+          <div class="tokubetsu__padding">
+            <img src="assets/image/tokubetsu/tokubetsu__image02.png" alt="" />
+          </div>
+          <p>通販が不慣れな方でも安心</p>
+          <p>
+            <span class="text__red text__big">毎月50名様限定</span><br />
+            アンケートキャンペーンは<br />いつまでやっているかわからないので<br />早めにチェックしてみてください
+          </p>
+          <div class="tokubetsu__padding">
+            <a
+              class="tokubetsu__button"
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/image/tokubetsu/tokubetsu__button.png" alt="" />
+            </a>
+          </div>
+        </section>
+
+        <section class="tsuiki">
+          <p class="text__green">追記</p>
+          <p>
+            心がよどみ腰が重かった私も<br />元気な頃のワクワクドキドキを<br />取り戻すことができました
+          </p>
+          <img src="assets/image/tsuiki/tsuiki__image01.png" alt="" />
+          <p>
+            年齢からくる悩みに負けない！<br />って思わせてくれたアマテラスにも感謝！<br />皆さんにもこの感動を味わってほしいです<br />きっと「早く出会いたかった！」と思えるはずです
+          </p>
+          <div class="arrow__block">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+          </div>
           <a
-            href="https://www.amateras.biz/info/law_info"
+            class="tokubetsu__button"
+            href="http://"
             target="_blank"
             rel="noopener noreferrer"
-            >プライバシーポリシー</a
           >
-          <a
-            href="https://www.amateras.biz/shop/privacy"
-            target="_blank"
-            rel="noopener noreferrer"
-            >特定商取引法に基づく表記</a
-          >
-        </div>
-      </footer>
-    </section>
+            <img src="assets/image/tokubetsu/tokubetsu__button.png" alt="" />
+          </a>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer text__blue" id="footer">
+          <div class="footer__links">
+            <a href="#" target="_blank" rel="noopener noreferrer">運営者情報</a>
+            <a
+              href="https://www.amateras.biz/shop/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+              >特定商取引法に基づく表記</a
+            >
+            <a
+              href="https://www.amateras.biz/info/law_info"
+              target="_blank"
+              rel="noopener noreferrer"
+              >プライバシーポリシー</a
+            >
+          </div>
+        </footer>
+      </section>
+    </main>
+    <script src="assets/js/popup.js"></script>
   </body>
 </html>

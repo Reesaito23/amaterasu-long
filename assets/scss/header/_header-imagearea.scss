@@ -1,0 +1,30 @@
+@use "sass:math";
+@use "sass:map";
+
+.header__imagearea{
+  margin-top: get-sp-vw(20);
+  @include mq($size: 'desktop'){
+    margin-top: get-pc-vw(50);
+  }
+}
+.imagearea{
+  &__textblock{
+    padding: get-sp-vw(24) 0;
+    position: relative;
+    background-color: rgba($color: #FFFFFF, $alpha: .5);
+    margin-top: get-sp-vw(-60);
+    text-align: center;
+    font-size: get-sp-vw(18);
+    font-weight: bold;
+    @include mq($size: 'desktop'){
+      margin-top: get-pc-vw(-130);
+      font-size: get-pc-vw(30);
+      padding: get-pc-vw(35) 0;
+    }
+    &-fuchi{
+      img{
+        width: 85%;
+      }     
+    }
+  }
+}

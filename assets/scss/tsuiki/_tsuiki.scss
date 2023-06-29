@@ -1,0 +1,61 @@
+@use "sass:math";
+@use "sass:map";
+
+.tsuiki{
+  padding: 0 get-sp-vw(10) get-sp-vw(30);
+  @include mq($size: 'desktop'){
+    padding: 0 get-pc-vw(20) get-pc-vw(40);
+  }
+  margin-top: get-sp-vw(60);
+  @include mq($size: 'desktop') {
+      margin-top: get-pc-vw(80);
+    }
+  p{
+    text-align: center;
+    font-size: get-sp-vw(18);
+    @include mq($size: 'desktop'){
+      font-size: get-pc-vw(25);
+    }
+    + p{
+      margin-top: get-sp-vw(10);
+      
+        @include mq($size: 'desktop') {
+          margin-top: get-pc-vw(20);
+        }
+    }
+  }
+  img{
+    margin: get-sp-vw(20) auto 0;
+    @include mq($size: 'desktop'){
+      margin: get-pc-vw(40) auto 0;
+    }
+    &.image__illust{
+      margin-top: get-sp-vw(5);
+      width: 60%;
+      @include mq($size: 'desktop') {
+          margin-top: get-pc-vw(10);
+          width: initial;
+        }
+      + p{
+      margin-top: get-sp-vw(10);
+      
+        @include mq($size: 'desktop') {
+          margin-top: get-pc-vw(20);
+        }
+      }
+    }
+    + p{
+      margin-top: get-sp-vw(20);
+      
+        @include mq($size: 'desktop') {
+          margin-top: get-pc-vw(40);
+        }
+    }
+  }
+  .arrow__block{
+    margin-top: get-sp-vw(15);
+    @include mq($size: 'desktop'){
+      margin-top: get-pc-vw(20);
+    }
+  }
+}

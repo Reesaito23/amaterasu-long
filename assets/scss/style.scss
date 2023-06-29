@@ -6,7 +6,21 @@
 @import 'global/setting';
 @import 'global/function';
 
+@import 'common/text';
+@import 'common/arrow';
+@import 'popup/popup';
+
 @import 'header/header';
+@import 'header/header-imagearea';
+@import 'worry/worry';
+@import 'article/article';
+@import 'hyugatoki/hyugatoki';
+@import 'kuchikomi/kuchikomi';
+@import 'reason/reason';
+@import 'amateras/amateras';
+@import 'tokubetsu/tokubetsu';
+@import 'tsuiki/tsuiki';
+
 @import 'banner/banner';
 @import 'question/question';
 @import 'question/question-content';

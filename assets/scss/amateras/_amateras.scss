@@ -1,0 +1,119 @@
+@use "sass:math";
+@use "sass:map";
+
+.amateras{
+  &__padding{
+    padding: 0 get-sp-vw(10) get-sp-vw(30);
+  @include mq($size: 'desktop'){
+    padding: 0 get-pc-vw(20) get-pc-vw(40);
+  }
+  }
+  p{
+    text-align: center;
+    font-size: get-sp-vw(18);
+    @include mq($size: 'desktop'){
+      font-size: get-pc-vw(25);
+    }
+    + p{
+      margin-top: get-sp-vw(10);
+      
+        @include mq($size: 'desktop') {
+          margin-top: get-pc-vw(20);
+        }
+    }
+  }
+  img{
+    margin: get-sp-vw(20) auto 0;
+    @include mq($size: 'desktop'){
+      margin: get-pc-vw(40) auto 0;
+    }
+    &.image__illust{
+      margin-top: get-sp-vw(5);
+      width: 60%;
+      @include mq($size: 'desktop') {
+          margin-top: get-pc-vw(10);
+          width: initial;
+        }
+      + p{
+      margin-top: get-sp-vw(10);
+      
+        @include mq($size: 'desktop') {
+          margin-top: get-pc-vw(20);
+        }
+      }
+    }
+    + p{
+      margin-top: get-sp-vw(20);
+      
+        @include mq($size: 'desktop') {
+          margin-top: get-pc-vw(40);
+        }
+    }
+  }
+  &__list{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: get-sp-vw(20);
+    margin-bottom: get-sp-vw(20);
+    font-size: get-sp-vw(18);
+    @include mq($size: 'desktop'){
+      font-size: get-pc-vw(25);
+      width: 80%;
+      margin-top: get-pc-vw(20);
+      margin-bottom: get-pc-vw(20);
+    }
+    li{
+      position: relative;
+      padding-left: get-sp-vw(60);
+      @include mq($size: 'desktop'){
+        padding-left: get-pc-vw(80);
+      }
+      &:not(:first-child){
+        margin-top: get-sp-vw(10);
+        @include mq($size: 'desktop'){
+          margin-top: get-pc-vw(10);
+        }
+      }
+      &::before{
+        position: absolute;
+          left: 0;
+          top: .3em;
+          content: "";
+          background-size: contain;
+          width: get-sp-vw(50);
+          height: get-sp-vw(50);
+          display: inline-block;
+          background-repeat: no-repeat;
+          @include mq($size: 'desktop'){
+            top: .3em;
+            width: get-pc-vw(66);
+            height: get-pc-vw(66);
+          }
+      }
+      &:nth-of-type(1){
+        &::before{
+          background-image: url("../image/amateras/amateras__list01.png");
+        }
+      }
+      &:nth-of-type(2){
+        &::before{
+          background-image: url("../image/amateras/amateras__list02.png");
+        }
+      }
+      &:nth-of-type(3){
+        &::before{
+          background-image: url("../image/amateras/amateras__list03.png");
+        }
+      }
+    }
+  }
+  .arrow__block{
+    margin-top: get-sp-vw(30);
+    margin-bottom: get-sp-vw(30);
+    @include mq($size: 'desktop'){
+      margin-top: get-pc-vw(40);
+      margin-bottom: get-pc-vw(40);
+    }
+  }
+}

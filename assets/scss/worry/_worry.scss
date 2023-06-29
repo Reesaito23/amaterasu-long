@@ -1,0 +1,60 @@
+@use "sass:math";
+@use "sass:map";
+
+.worry{
+  margin-top: get-sp-vw(10);
+  padding: 0 get-sp-vw(10);
+  @include mq($size: 'desktop'){
+    margin-top: get-pc-vw(10);
+    padding: 0 get-pc-vw(20);
+  }
+  &__text{
+    text-align: center;
+    font-size: get-sp-vw(20);
+    @include mq($size: 'desktop'){
+      font-size: get-pc-vw(25);
+    }
+  }
+  &__list{
+    background-color: rgba($color: #FBE74D, $alpha: .08);
+    margin-top: get-sp-vw(16);
+    padding: get-sp-vw(15) get-sp-vw(10) get-sp-vw(20);
+    @include mq($size: 'desktop'){
+      margin-top: get-pc-vw(20);
+      padding: get-pc-vw(30) get-pc-vw(25) get-pc-vw(33);
+    }
+    li{
+      position: relative;
+      padding-left: get-sp-vw(40);
+      font-size: get-sp-vw(20);
+      font-weight: bold;
+      @include mq($size: 'desktop'){
+        padding-left: get-pc-vw(70);
+        font-size: get-pc-vw(32);
+      }
+      &:not(:first-child){
+        margin-top: get-sp-vw(10);
+        @include mq($size: 'desktop'){
+          margin-top: get-pc-vw(23);
+        }
+      }
+      &::before{
+        position: absolute;
+          left: 0;
+          top: 0.2em;
+          content: "";
+          background-size: contain;
+          background-image: url("../image/worry/checked.svg");
+          width: get-sp-vw(28);
+          height: get-sp-vw(28);
+          display: inline-block;
+          background-repeat: no-repeat;
+          @include mq($size: 'desktop'){
+            top: .1em;
+            width: get-pc-vw(50);
+            height: get-pc-vw(50);
+          }
+      }
+    }
+  }
+}

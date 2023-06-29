@@ -1,0 +1,44 @@
+@use "sass:math";
+@use "sass:map";
+
+.arrow{
+  transform: rotate(90deg);
+    width: get-sp-vw(48);
+    height: get-sp-vw(48);
+    background: linear-gradient(to right, #BDEA3C, #6CBF1A);
+    background-size: 200% 200%;
+    clip-path: polygon(0 25%,
+      50% 25%,
+      50% 0,
+      100% 50%,
+      50% 100%,
+      50% 75%,
+      0 75%);
+    animation: bggradient 1s ease infinite;
+    @include mq($size: 'desktop'){
+      width: get-pc-vw(100);
+      height: get-pc-vw(100);
+    }
+  &__block{
+    display: flex;
+    justify-content: center;
+    gap: get-sp-vw(20);
+    @include mq($size: 'desktop'){
+      gap: get-pc-vw(70);
+    }
+  }
+}
+
+@keyframes bggradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

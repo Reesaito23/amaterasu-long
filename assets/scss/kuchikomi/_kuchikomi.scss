@@ -1,0 +1,17 @@
+@use "sass:math";
+@use "sass:map";
+
+.kuchikomi{
+  padding: 0 get-sp-vw(20) get-pc-vw(40);
+  @include mq($size: 'desktop'){
+    padding: 0 get-pc-vw(20) get-pc-vw(40);
+  }
+  img{
+    &:not(:first-child){
+      margin-top: get-sp-vw(10);
+      @include mq($size: 'desktop'){
+        margin-top:get-pc-vw(10);
+      }
+    }
+  }
+}

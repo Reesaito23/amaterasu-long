@@ -2,29 +2,33 @@
 @use "sass:map";
 
 .header{
-  padding: get-pc-vw(20) 0;
-  &__logo{
-    width: 20%;
-    margin: 0 auto;
-    min-width: get-sp-vw(125);
+  &__top{
+    background: linear-gradient(to bottom, #56C983 00%, #117E83 100%);
+    height: get-sp-vw(11);
     @include mq($size: 'desktop'){
-      min-width: get-pc-vw(125);
+      height: get-pc-vw(11);
     }
   }
+  
   &__title{
-    font-size: get-sp-vw(24);
+    font-size: get-sp-vw(26);
     text-align: center;
-    margin-top: get-pc-vw(10);
+    margin-top: get-sp-vw(20);
+    padding: 0 get-sp-vw(30);
+    font-weight: bold;
     @include mq($size: 'desktop'){
+      margin-top: get-pc-vw(30);
+      padding: 0 get-pc-vw(30);
       font-size: get-pc-vw(40);
     }
-  }
-  &__text{
-    font-size: get-sp-vw(14);
-    text-align: center;
-    margin-top: get-pc-vw(2);
-    @include mq($size: 'desktop'){
-      font-size: get-pc-vw(20);
+    &-grade{
+      img{
+        width: 80%;
+        margin-top: get-sp-vw(10);
+        @include mq($size: 'desktop'){
+          margin-top: get-pc-vw(10);
+        }
+      }
     }
   }
 }

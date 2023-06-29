@@ -1,0 +1,88 @@
+@use "sass:math";
+@use "sass:map";
+
+.fuchi{
+  img {
+      margin: get-sp-vw(-10) auto 0 auto;
+  
+      @include mq($size: 'desktop') {
+        margin: get-pc-vw(-25) auto 0 auto;
+      }
+    }
+  + p{
+    margin: get-sp-vw(-10) auto 0 auto;
+    
+      @include mq($size: 'desktop') {
+        margin: get-pc-vw(-25) auto 0 auto;
+      }
+  }
+}
+.grade{
+  img{
+    margin: 0 auto;
+  }
+}
+.text{
+  &__left{
+    text-align: initial !important;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    @include mq($size: 'desktop'){
+      width: 80%;
+    }
+  }
+  &__bold{
+    font-weight: bold;
+  }
+  &__red{
+    color: #FF0000;
+  }
+  &__blue{
+    color: #1F5DE8;
+  }
+  &__green{
+    color: #32A283;
+  }
+  &__pink{
+    color: #E194C8;
+  }
+  &__underline{
+    text-decoration: underline;
+    text-decoration-color: #FFF686;
+    &-green{
+      text-decoration: underline;
+        text-decoration-color: #32A283;
+    }
+    &-red{
+      text-decoration: underline;
+        text-decoration-color: #FF0000;
+    }
+  }
+  &__shippori{
+    font-family: 'Shippori Mincho', serif;
+  }
+  &__mark{
+    background-color: #FFF686;
+    padding: 0 get-sp-vw(2);
+  }
+  &__big{
+    font-size: get-sp-vw(24) !important;
+    @include mq($size: 'desktop'){
+      font-size: get-pc-vw(36) !important;
+    }
+  }
+  
+}
+p.text__bold{
+  font-size: get-sp-vw(28) !important;
+  @include mq($size: 'desktop'){
+    font-size: get-pc-vw(42) !important;
+  }
+}
+span.text__bold{
+  font-size: get-sp-vw(24) !important;
+  @include mq($size: 'desktop') {
+      font-size: get-pc-vw(36) !important;
+    }
+}
