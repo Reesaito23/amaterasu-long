@@ -138,6 +138,18 @@ span.text__bold {
     background-position: 0% 50%;
   }
 }
+.animation__bound {
+  animation: anime1 0.5s ease 0s infinite alternate;
+}
+
+@keyframes anime1 {
+  from {
+    transform: scale(0.9, 0.9);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
 @keyframes fadeIn {
   from {
     opacity: 0;

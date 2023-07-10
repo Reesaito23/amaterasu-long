@@ -1,0 +1,17 @@
+@use "sass:math";
+@use "sass:map";
+
+.animation{
+  &__bound{
+    animation: anime1 0.5s ease 0s infinite alternate;
+  }
+}
+@keyframes anime1 {
+  from {
+    transform: scale(0.9, 0.9);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
